@@ -1,0 +1,5 @@
+# Test directory
+mcs/
+
+# Mac things
+.DS_Store
