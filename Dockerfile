@@ -15,4 +15,4 @@ COPY datapacks/* /mcs-extras
 
 WORKDIR /mcs
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
-CMD ["bash", "-c", "/mcs-server/pre-start.sh && exec java -Xms1G -Xmx3G -jar server.jar nogui"]
+CMD ["bash", "-c", "/mcs-server/pre-start.sh && exec java -Xms1G -Xmx3G -Dlog4j2.formatMsgNoLookups=true -jar server.jar nogui"]
