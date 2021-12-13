@@ -11,7 +11,7 @@ RUN mkdir /mcs-server /mcs-extras
 COPY server /mcs-server
 RUN chmod 544 /mcs-server/pre-start.sh
 
-COPY datapacks/* /mcs-extras
+COPY datapacks/* /mcs-extras/
 
 WORKDIR /mcs
 ENTRYPOINT ["/usr/bin/dumb-init", "--"]
