@@ -1,5 +1,0 @@
-steps:
-  - name: 'gcr.io/cloud-builders/docker'
-    args: [ 'build', '-t', 'us-west2-docker.pkg.dev/$PROJECT_ID/mcs-box-repo/mcs-box:latest', '.']
-images:
-  - 'us-west2-docker.pkg.dev/trusty-gradient-272320/mcs-box-repo/mcs-box:latest'

@@ -6,6 +6,9 @@ The container is built with the assumption that a `/mcs` volume is mounted which
 
 When the container is started, it checks a `mcs-meta.json` file. If the version in the container is newer than the version in `/mcs`, then the various configuration and binaries will be copied to the mount, making for a smoother upgrade experience.
 
+## Update
+It turns out that the virtual CPUs provided in my cloud host of choice is not beefy enough to handle this strategy and I'm moving on to other projects, so I switched to a dedicated host which runs about the same price I was paying on the cloud host.
+
 ## Build the container
 ```Shell
 docker build -t mcs-box .
